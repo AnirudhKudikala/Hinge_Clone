@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Image,
   StyleSheet,
@@ -11,7 +12,12 @@ import { useNavigation } from '@react-navigation/native';
 import Ionicons from '@react-native-vector-icons/ionicons';
 
 const NameScreen = () => {
+  const [firstName, setFirstName] = useState("");
   const navigation = useNavigation();
+
+  const onChangeFirstName = name => {
+    setFirstName(name);
+  };
 
   const handleNext = () => {
     navigation.navigate('Email');
@@ -57,6 +63,8 @@ const NameScreen = () => {
             What's your name?
           </Text>
           <TextInput
+            value={firstName}
+            onChange={onChangeFirstName}
             autoFocus
             placeholder="First Name (required)"
             placeholderTextColor={'#BEBEBE'}

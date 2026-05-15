@@ -1,7 +1,7 @@
-import { Text } from 'react-native';
+import StackNavigator from './navigation/StackNavigator';
 
 function App() {
-  return <Text>Hello World</Text>;
+  return <StackNavigator />;
 }
 
 export default App;

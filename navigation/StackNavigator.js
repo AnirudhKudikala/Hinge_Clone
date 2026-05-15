@@ -9,6 +9,26 @@ import HomeScreen from '../screens/HomeScreen';
 import LikesScreen from '../screens/LikesScreen';
 import ChatScreen from '../screens/ChatScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import LoginScreen from '../screens/LoginScreen';
+import BasicInfo from '../screens/BasicInfo';
+import NameScreen from '../screens/NameScreen';
+import EmailScreen from '../screens/EmailScreen';
+import OTPScreen from '../screens/OTPScreen';
+import PasswordScreen from '../screens/PasswordScreen';
+import DateOfBirthScreen from '../screens/DateOfBirthScreen';
+import LocationScreen from '../screens/LocationScreen';
+import GenderScreen from '../screens/GenderScreen';
+import TypeScreen from '../screens/TypeScreen';
+import DatingType from '../screens/DatingType';
+import LookingForScreen from '../screens/LookingForScreen';
+import HomeTownScreen from '../screens/HomeTownScreen';
+import WorkPlaceScreen from '../screens/WorkPlaceScreen';
+import JobTitleScreen from '../screens/JobTitleScreen';
+import PhotosScreen from '../screens/PhotosScreen';
+import PromptsScreen from '../screens/PromptsScreen';
+import ShowPromptsScreen from '../screens/ShowPromptsScreen';
+import PreFinalScreen from '../screens/PreFinalScreen';
+import WritePromptScreen from '../screens/WritePromptScreen';
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -113,9 +133,117 @@ const StackNavigator = () => {
     );
   }
 
+  function AuthStack() {
+    return (
+      <Stack.Navigator>
+        {/* <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        /> */}
+        <Stack.Screen
+          name="Basic"
+          component={BasicInfo}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Name"
+          component={NameScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Email"
+          component={EmailScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Otp"
+          component={OTPScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Password"
+          component={PasswordScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Birth"
+          component={DateOfBirthScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Location"
+          component={LocationScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Gender"
+          component={GenderScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Type"
+          component={TypeScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Dating"
+          component={DatingType}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="LookingFor"
+          component={LookingForScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HomeTown"
+          component={HomeTownScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="WorkPlace"
+          component={WorkPlaceScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="JobTitle"
+          component={JobTitleScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Photos"
+          component={PhotosScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Prompts"
+          component={PromptsScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ShowPrompts"
+          component={ShowPromptsScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="WritePrompt"
+          component={WritePromptScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PreFinal"
+          component={PreFinalScreen}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    );
+  }
+
   return (
     <NavigationContainer>
-      <MainStack />
+      {/* <MainStack /> */}
+      <AuthStack />
     </NavigationContainer>
   );
 };

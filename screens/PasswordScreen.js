@@ -10,7 +10,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import Ionicons from '@react-native-vector-icons/ionicons';
-import MaterialDesignIcons from '@react-native-vector-icons/material-icons';
+import MaterialIcons from '@react-native-vector-icons/material-icons';
 
 const PasswordScreen = () => {
   const [password, setPassword] = useState('');
@@ -24,7 +24,7 @@ const PasswordScreen = () => {
   };
 
   const handleNext = () => {
-    navigation.navigate('Otp', {email});
+    navigation.navigate('Otp', { email });
   };
 
   return (
@@ -42,7 +42,7 @@ const PasswordScreen = () => {
               alignItems: 'center',
             }}
           >
-            <MaterialDesignIcons name="lock" size={26} color="black" />
+            <MaterialIcons name="lock" size={26} color="black" />
           </View>
           <Image
             style={{ width: 100, height: 40 }}
@@ -78,6 +78,7 @@ const PasswordScreen = () => {
             paddingBottom: 10,
             fontFamily: 'GeezaPro-Bold',
             fontSize: 22,
+            color: 'black',
           }}
         />
         <Text style={{ color: 'grey', marginTop: 7, fontSize: 15 }}>

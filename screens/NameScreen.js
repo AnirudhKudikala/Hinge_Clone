@@ -64,7 +64,7 @@ const NameScreen = () => {
           </Text>
           <TextInput
             value={firstName}
-            onChange={onChangeFirstName}
+            onChangeText={onChangeFirstName}
             autoFocus
             placeholder="First Name (required)"
             placeholderTextColor={'#BEBEBE'}

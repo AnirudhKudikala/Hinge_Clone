@@ -64,7 +64,7 @@ const EmailScreen = () => {
         </Text>
         <TextInput
           value={email}
-          onChange={onChangeEmail}
+          onChangeText={onChangeEmail}
           autoFocus
           placeholder="Enter your email"
           placeholderTextColor={'#BEBEBE'}

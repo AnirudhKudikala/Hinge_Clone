@@ -64,10 +64,10 @@ const PasswordScreen = () => {
 
         <TextInput
           value={password}
-          onChange={onChangePassword}
-          autoFocus
-          secureTextEntry
-          placeholder="Enter your password"
+          onChangeText={onChangePassword}
+          autoFocus={true}
+          placeholder="Enter your Password"
+          secureTextEntry={true}
           placeholderTextColor={'#BEBEBE'}
           style={{
             width: 340,

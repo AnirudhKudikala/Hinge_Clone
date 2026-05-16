@@ -68,7 +68,7 @@ const JobTitleScreen = () => {
             borderBottomWidth: 1,
             paddingBottom: 10,
             fontFamily: 'GeezaPro-Bold',
-            fontSize: jobTitle ? 22 : 22,
+            fontSize: 22,
           }}
         />
 

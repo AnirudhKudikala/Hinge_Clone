@@ -29,6 +29,7 @@
     "react-native": "0.85.2",
     "react-native-maps": "^1.27.2",
     "react-native-safe-area-context": "^5.7.0",
+    "react-native-screenguard": "^2.0.2",
     "react-native-screens": "^4.25.0"
   },
   "devDependencies": {
